@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap');
+
+:root {
+    --cor1: #53F5A3;
+    --cor2: #F5F12F;
+    --cor3: #79F553;
+    --cor4: #53F56C;
+    --font1: 'Playpen Sans', cursive;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+header, nav{
+    background-color: var(--cor3);
+}
+
+header > h1{
+    text-align: center;
+    font-family: 'Playpen Sans', cursive;
+    padding-top: 10px;
+}
+
+nav{
+    font-family: var(--font1);
+}
+
+nav > p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav > a{
+    text-decoration: none;
+    color: black;
+} 
+
+#login{
+    padding-left: 10px;
+}
+
+#cadastro:hover, #login:hover{
+    text-decoration: underline;
+
+} 
+
+#lupa{
+    align-items: right;
+    float: right;
+}
+
+footer{
+    background-color: var(--cor3);
+    font-family: var(--font1);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    padding-top: 15px;
+}
+
+footer{
+    font-weight: bold;
+} 
