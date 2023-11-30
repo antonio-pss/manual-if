@@ -7,57 +7,65 @@
     --cor2: #F5F12F;
     --cor3: #79F553;
     --cor4: #53F56C;
+    --cor5: #037A77;
     --font1: 'Playpen Sans', cursive;
 }
 
 *{
     padding: 0%;
     margin: 0%;
+    font-family: var(--font1);
 }
 
-header, nav{
-    background-color: var(--cor3);
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-color: darkcyan;
+}
+
+header{
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--cor4);
+    box-shadow: 5px 5px #53f56b57;
 }
 
 header > h1{
     text-align: center;
     font-family: 'Playpen Sans', cursive;
-    padding-top: 10px;
 }
 
-nav{
-    font-family: var(--font1);
+main{
+    margin-top: 50px;
+    margin-bottom: 50px; 
 }
 
-nav > p{
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-nav > a{
-    text-decoration: none;
+main > a{
     color: black;
-} 
-
-#login{
-    padding-left: 10px;
 }
 
-#cadastro:hover, #login:hover{
-    text-decoration: underline;
-
+.selecao:hover{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.35);
 } 
 
-#lupa{
-    align-items: right;
-    float: right;
+.selecao{
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 footer{
-    background-color: var(--cor3);
+    background-color: var(--cor4);
     font-family: var(--font1);
     text-align: center;
-    position: absolute;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
